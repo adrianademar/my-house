@@ -54,13 +54,15 @@ public class Picture
         sun.moveHorizontal(100);
         sun.moveVertical(80);
         sun.changeSize(80);
-        sun.makeVisible();
+        
    
         suelo = new Square();
         suelo.changeColor("green");
         suelo.moveHorizontal(-400);
         suelo.moveVertical(140);
         suelo.changeSize(600);
+        
+        sun.makeVisible();
         suelo.makeVisible();
         sun.slowMoveVertical(-140);
         
@@ -94,5 +96,10 @@ public class Picture
             roof.changeColor("green");
             sun.changeColor("yellow");
         }
+    }
+    
+    public void atardecer()
+    {
+     sun.slowMoveVertical(140);
     }
 }
